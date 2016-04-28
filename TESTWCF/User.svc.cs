@@ -13,7 +13,7 @@ namespace TESTWCF
     {
         public string ShowName(string name)
         {
-            string wcfName = string.Format("调用WCF服务输出的文字为：{0}", name);
+            string wcfName = string.Format("调用WCF处理后的文本为：{0}", name);
             return wcfName;
         }
     }

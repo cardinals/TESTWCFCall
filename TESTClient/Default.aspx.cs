@@ -23,5 +23,12 @@ namespace TESTClient
             string result = userClient.ShowName(this.TextBox1.Text);
             TextBox2.Text = result;
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            ServiceReference2.TESTWebService1SoapClient ws = new ServiceReference2.TESTWebService1SoapClient();
+            string result = ws.HelloWorld(this.TextBox3.Text);
+            TextBox4.Text = result;
+        }
     }
 }
